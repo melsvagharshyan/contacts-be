@@ -53,7 +53,7 @@ export class ContactsController {
   }
 
   // Delete a contact
-  @Delete(':id')
+  @Delete('contact/:id')
   remove(@Param('id') id: string) {
     return this.contactsService.remove(id);
   }
