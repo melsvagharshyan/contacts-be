@@ -14,6 +14,7 @@ export class ContactsService {
     firstName: string;
     lastName: string;
     contactDescription: string;
+    avatar: string;
   }): Promise<Contact> {
     const createdContact = new this.contactModel(createContactDto);
     return createdContact.save();
@@ -36,6 +37,7 @@ export class ContactsService {
       firstName?: string;
       lastName?: string;
       contactDescription?: string;
+      avatar?: string;
     },
   ): Promise<Contact> {
     return this.contactModel

@@ -21,6 +21,7 @@ export class ContactsController {
       firstName: string;
       lastName: string;
       contactDescription: string;
+      avatar: string;
     },
   ) {
     return this.contactsService.create(createContactDto);
@@ -47,6 +48,7 @@ export class ContactsController {
       firstName?: string;
       lastName?: string;
       contactDescription?: string;
+      avatar?: string;
     },
   ) {
     return this.contactsService.update(id, updateContactDto);
